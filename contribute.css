@@ -1,0 +1,74 @@
+form{
+    text-align: left;
+    margin-left: 22pc;
+    margin-top: 97px;
+    margin-bottom: 35px;
+    background-color: rgb(247, 244, 179);
+    border:2px dashed transparent;
+    box-shadow: 0 6px 6px transparent;
+    width: 48pc;
+    padding-bottom: 2.5pc;
+    padding-left: 5pc;
+    /* background-color: #aedbc7; */
+    /* background-image: url('https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid transparent;
+    border-radius: 8px;
+}
+h4{
+    color: rgb(24, 19, 19);
+    font-weight: bolder;
+}
+input{
+    height: 30px;
+    width: 35pc;
+}
+button{
+   margin-left: 15pc;
+    margin-top: 2pc;
+    height: 40px;
+    width: 180px;
+    background-color: rgb(97, 97, 207);
+    color: antiquewhite;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    letter-spacing: 1px;
+    font-size: large;
+}
+button:hover{
+    cursor: pointer;
+    background-color: green;
+}
+body{
+    background-image: url('https://images.unsplash.com/photo-1628527304948-06157ee3c8a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    opacity: 0.925;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #d10c0c;
+}
+
+.input-control .error {
+    color: #be1739;
+    font-size: 19px;
+    font-weight: 400;
+    height: 13px;
+}
+::placeholder{
+    padding-left: 6px;
+}
+input{
+    border: 1px solid rgb(181, 173, 173);
+   border-radius: 5px; 
+}

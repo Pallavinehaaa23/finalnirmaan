@@ -1,0 +1,424 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+     background-image: url('https://images.pexels.com/photos/3616764/pexels-photo-3616764.jpeg?auto=compress&cs=tinysrgb&w=600');
+    font-weight: 400px;
+  }
+  label.logo{
+    font-size: 35px;
+    font-weight: 500;
+    padding-left: 60px;
+    color: aliceblue;
+    line-height: 80px;
+  }nav{
+    height: 80px;
+    width:100%;
+    position: sticky;
+    background-image: url('https://images.pexels.com/photos/268832/pexels-photo-268832.jpeg?auto=compress&cs=tinysrgb&w=600');
+    border-radius: 18px;
+    z-index: 100;
+    box-shadow: 0 5px 5px 0px rgb(16, 88, 82); 
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  nav ul{
+    float: right;
+    margin-right: 40px;
+  }
+  nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+    
+  }
+  nav a{
+    color: azure;
+    font-size: larger;
+    text-decoration: none;
+  }
+  a:hover{
+    border:12px solid transparent;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+  }
+  nav .menu{
+    font-size: larger;
+    line-height: 80px;
+    color: antiquewhite;
+    float: right;
+    margin-right: 40px;
+    display: none;
+    margin-right: 5px;
+    cursor:pointer;
+  }
+  /* end of nav bar */
+  
+  
+  
+  .direction{
+    text-align: center;
+  }
+  .direction button{
+    font-family: cursive;
+    font-weight: bold;
+    background-color: #ffffff44;
+    border:none;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    transition: 0.5s;
+    margin:0 10px;
+  }
+  .direction button:hover{
+    background-color: #993d3d;
+  }
+  .item{
+    border-radius: 15px;
+    width: 200px;
+    height:500px;
+    background-image: linear-gradient(to top, #AEC0CE, #ECECF2);
+    overflow: hidden;
+    transition: 0.5s;
+    margin:10px;
+    scroll-snap-align: start;
+  }
+  .item .avatar{
+    display: block;
+    margin:50px auto 10px;
+    width:100px;
+    height:150px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 15px #7e878d;
+  }
+  .item .content{
+    padding:30px;
+    font-family: monospace;
+  }
+  .item .content table td{
+    padding:10px 0;
+    border-bottom: 1px solid #AEC0CE;
+  }
+  .item .content table td:nth-child(2){ 
+    text-align: right;
+  }
+  .item .nameGroup{
+    text-align: center;
+    border-bottom:none!important;
+  }
+  #list{
+    display: flex;
+    width:max-content;
+  }
+  #formList{
+    width:1280px;
+    max-width: 100%;
+    overflow: auto;
+    margin:100px auto 50px;
+    scroll-behavior: smooth;
+    scroll-snap-type: both;
+  }
+   #formList::-webkit-scrollbar{
+    display: none; 
+  }
+  @media screen and (max-width: 1024px){
+    .item{
+        width: calc(33.3vw - 20px);
+    }
+    .direction{
+        display: none;
+    }
+  }
+  @media screen and (max-width: 768px){
+    .item{
+        width: calc(50vw - 20px);
+    }
+    .direction{
+        display: none;
+    }
+  }
+  
+  
+  
+  
+  
+  /*======================================
+  adding style to the icons(book,globe,pencil)
+  =========================================*/
+  
+  .row{
+    display: flex;
+  }
+  .about-item i{
+    font-size: 43px;
+    margin: 0;
+  }
+  
+  /*======================================
+  adding style to h3(heading 3) of each item 
+  =========================================*/
+  .about-item h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+    background-color: none;
+  }
+  
+  /*======================================
+  styling the hr (the blue line in between)
+  =========================================*/
+  .about-item hr{
+    width: 90%;
+    height: 10px;
+    background-color: #c646cd;
+    margin: 0;
+    border: none;
+    text-align:left;
+    
+  }
+  
+  /*========================================
+  hover means when you put your cursor over it
+  =========================================*/
+  .about-item:hover{
+    background-color:none;
+  }
+  .about-item:hover i,
+  .about-item:hover h3,
+  .about-item:hover p{
+    color: rgb(79, 47, 85);
+  }
+  .about-item:hover hr{
+    background-color:grey;
+  }
+  
+  /*==============================================================================
+  translate Y: move along the Y axis, negative(-20) moves it up, while positive(20) moves in down by  
+  ================================================================================*/
+  .about-item:hover i{
+    transform: translateY(-20px);
+  }
+  .about-item:hover i,
+  .about-item:hover h3,
+  .about-item:hover hr{
+    transition: all 400ms ease-in-out;
+  }
+  .imagebg img{
+    width: 50%;
+  }
+  .map{
+    position: absolute;
+    float: right;
+  }
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+  
+  
+  .container-position{
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    background: none;
+    border-radius: 12px;
+    padding: 30px;
+    margin-left: 3pc;
+    margin-right: 35px;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    scroll-padding: 5p;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  }
+  .container .card {
+    display: flexbox;
+    /* flex: 0 0 100%; */
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    padding-right: 10pc;
+    border-radius: 12px;
+    background: #d7c1c1;
+    scroll-snap-align: start;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  }
+  .card .image {
+    height: 150px;
+    width: 150px;
+    padding: 4px;
+    background: #4070f4;
+    border-radius: 50%;
+  }
+  .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+  }
+  .card h2 {
+    margin-top: 25px;
+    color: #171414;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 22px;
+    letter-spacing: 3px;
+    font-weight:lighter;
+  }
+  .card p {
+    margin-top: 3px;
+    margin-right: 3px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    text-align: left;
+  }
+   
+  .sideimg{
+    display: flex;
+  }
+  .sideimg img{
+    width: 20pc;
+    height: 20pc;
+    margin-left: 20px;
+    margin-top: 10px;
+    border :3px solid transparent;
+    border-radius: 15px;
+    box-shadow: 0 10px 7px 0 black;
+
+  }
+  .sideimg .widthgive{
+    width: 70%;
+    margin-left:30px;
+    text-align: justify;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #020848;
+    letter-spacing: 0.03px;
+    font-style: italic;
+    font-weight: 800;
+  }
+  .widthgive2{
+    display: flex;
+  }
+  .widthgive2 p{
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.03;
+    font-weight: 800;
+    color: #020848;
+    margin-left: 30px;
+    padding-right: 30px;
+    font-style: italic;
+  }
+  #team{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1px;
+  }
+  .sideimg2 img{
+    margin-right: 1.7pc ;
+    height:18pc;
+    width:20pc;
+    border:3px solid transparent;
+    border-radius:15px;
+    box-shadow:0 10px 10px 0 black;
+
+  }
+  footer{
+    position: relative;
+    width:100%;
+    background: grey;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+  footer .icon,footer .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  footer .icon li,footer .menu li{
+    list-style-type: none;
+  }
+  footer .icon li a{
+    font-size: 2rem;
+    color: navy;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  footer .icon li a:hover{
+    transform: translateY(-10px);
+  }
+  footer .menu li a{
+    font-size: 1.2rem;
+    color: navy;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+  }
+  footer .menu li a:hover{
+    opacity: 1;
+    color: blanchedalmond;
+  }
+  footer p{
+    color: white;
+    margin: 7px 0;
+    text-align: center;
+    font-size: 1.1 rem;;
+  }
+  .about-1 h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* margin-left: 22pc; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+   
+    
+  }
+  .about-1{
+    margin-top: 40px;
+  }
+  .about-1 p{
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: oblique;
+    color: gray;
+  }
+.mis{
+    font-size: medium;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: oblique;
+    color: rgb(84, 9, 84);
+}
+.vis{
+    font-size: medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: oblique;
+    color: rgb(84, 9, 84);
+}
+.achi{
+    font-size: medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: oblique;
+    color: rgb(84,9,84);
+}
+
+#ABOUT{
+  margin-right:100px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paystyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form  id="form" action="paysuccess.html" method="get">
+            <div class="input-control">
+            <h2>Owner</h2>
+            <input id="own" type="text">
+            <div class="error"></div>
+        </div><br>
+        <div class="input-control">
+            <h2>Cvv</h2>
+            <input id="cvv" type="number">
+            <div class="error"></div>
+        </div><br>
+        <div class="input-control">
+            <h2>Card Number</h2>
+            <input id="card" type="number"><br>
+            <div class="error"></div>
+        </div><br>
+        <div class="input-control">
+            <h2>Valid through</h2>
+            <select name="months" id="months">
+                <option value="Jan">Jan</option>
+                <option value="Feb">Feb</option>
+                <option value="Mar">Mar</option>
+                <option value="Apr">Apr</option>
+                <option value="May">May</option>
+                <option value="Jun">Jun</option>
+                <option value="Jul">Jul</option>
+                <option value="Aug">Aug</option>
+                <option value="Sep">Sep</option>
+                <option value="Oct">Oct</option>
+                <option value="Nov">Nov</option>
+                <option value="Dec">Dec</option>
+              </select>
+              <select name="years" id="years">
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+              </select><br><br>
+              <div class="imgs" style="margin-left: 30pc;">
+              <img src="mc.png" alt="">
+              <img src="vi.png" alt="">
+              <img src="pp.png" alt="">
+            </div>
+              <div class="error"></div>
+              </div>
+              <button id="btn" type="submit">Confirm</button>
+        </form>
+    </div>
+    <script src="pay.js"></script>
+</body>
+</html>

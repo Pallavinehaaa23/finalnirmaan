@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contribute.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cont">
+        <form id="form" action="payment.html" method="get">
+            <div class="input-control">
+            <h4>Name</h4>
+            <input id="name" type="text" style=" height: 30px;
+            width: 20pc;" placeholder="Your  first name">
+            <input type="text" style=" height: 30px;
+            width: 20pc;"  placeholder="Your  last name">
+            <div class="error"></div>
+            </div>
+            <div class="input-control">
+            <h4>Aadhar/Pan No.</h4>
+            <input id="aadhar" type="number" placeholder="Enter here" value="">
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+                <h4>Email</h4>
+                <input id="email" type="text" placeholder="Enter Email">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <h4>Phone No.</h4>
+                <input id="phon" type="number" placeholder="Enter 10-digit number">
+                <div class="error"></div>
+            </div>
+                <div class="input-control">
+                    <h4>Permanent Address</h4>
+                    <input id="address" type="text" placeholder="Enter address">
+                    <div class="error"></div>
+                    </div>
+                    <div class="input-control">
+                        <h4>City</h4>
+                        <input id="city" type="text">
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-control">
+                        <h4>State</h4>
+                        <select name="state" id="">
+                           <option value="">Andhra Pradesh</option>
+                           <option value="">Arunachal Pradesh	</option>
+                           <option value="">Assam</option>
+                           <option value="">Bihar</option>
+                           <option value="">Chhattisgarh</option>
+                           <option value="">Goa</option>
+                           <option value="">Gujarat</option>
+                           <option value="">Haryana</option>
+                           <option value="">Himachal Pradesh	</option>
+                           <option value="">Jharkhand</option>
+                           <option value="">Karnataka</option>
+                           <option value="">Kerala</option>
+                           <option value="">Madhya Pradesh</option>
+                           <option value="">Maharashtra</option>
+                           <option value="">Manipur</option>
+                           <option value="">Meghalaya</option>
+                           <option value="">Mizoram</option>
+                           <option value="">Nagaland</option>
+                           <option value="">Odisha</option>
+                           <option value="">Punjab</option>
+                           <option value="">Rajasthan</option>
+                           <option value="">Sikkim</option>
+                           <option value="">Tamil Nadu</option>
+                           <option value="">Telangana</option>
+                           <option value="">Tripura</option>
+                           <option value="">Uttar Pradesh</option>
+                           <option value="">Uttarakhand</option>
+                           <option value="">West Bengal</option>
+    
+                        </select> 
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-control">
+                        <h4 >Amount</h4>
+                        Rs.<input id="amount" type="number" placeholderd="Start donating" >
+                       <div class="error"></div>         
+                    </div>
+               
+           
+     <button id="submit" type="submit">Proceed to pay</button>
+        </form>
+
+    </div>
+    <script src="./contribute.js"></script>
+</body>
+</html>

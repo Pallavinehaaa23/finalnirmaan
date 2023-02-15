@@ -1,0 +1,227 @@
+*{
+    margin:0;
+    padding:0;
+    /* box-sizing: border-box; */
+    text-decoration: none;
+    list-style: none;
+}
+label.logo{
+    font-size: 35px;
+    font-weight: 500;
+    padding-left: 60px;
+    color: aliceblue;
+    line-height: 80px;
+}nav{
+    height: 80px;
+    width:100%;
+    position: sticky;
+    background-image: url('https://images.pexels.com/photos/268832/pexels-photo-268832.jpeg?auto=compress&cs=tinysrgb&w=600');
+    border-radius: 18px;
+    z-index: 100;
+    box-shadow: 0 5px 5px 0px rgb(16, 88, 82); 
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  nav ul{
+    float: right;
+    margin-right: 40px;
+  }
+  nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+    
+  }
+  nav a{
+    color: azure;
+    font-size: larger;
+    text-decoration: none;
+  }
+  a:hover{
+    border:12px solid transparent;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+  }
+  nav .menu{
+    font-size: larger;
+    line-height: 80px;
+    color: antiquewhite;
+    float: right;
+    margin-right: 40px;
+    display: none;
+    margin-right: 5px;
+    cursor:pointer;
+  }
+  /* end of nav bar */
+  body{
+    background-image: url('https://wallpaperaccess.com/full/2314983.jpg');
+    opacity: 0.96;
+ 
+  }
+  
+  
+.form {
+    text-align: center;
+    padding-top:40px ;
+    padding-bottom: 20px;
+    background-color: rgb(231, 239, 241);
+    border-radius: 10px;
+    opacity: 0.99;
+    box-shadow: 0 5px 5px 0 rgb(42, 38, 38);
+    border:2px solid rgb(49, 48, 48); 
+    height: 26pc;
+    width:50pc;
+    margin-top: 60px;
+    margin-bottom: 2pc;
+   margin-left: 25pc;
+}
+
+.form-element label{
+    font-size: medium;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgb(58 16 19);
+    display:inline-block ;
+    text-align: left;
+     width: 150px;
+    margin-left:90px; 
+
+}
+  .form-element input{
+    padding: 15px 15px 7px ;
+    background:rgb(232, 225, 225);
+   border: 2px;
+   border-color: rgb(143, 56, 183);
+     border-radius: 10px;
+     outline-width: 8px ;
+     margin-top:15px;
+    outline-color: rgb(11, 0, 0);
+    height: 30px;
+    width: 400px;
+
+  }
+  ::placeholder{
+    
+    color:rgb(86, 37, 37);
+    font-size: medium;
+    letter-spacing: 0.05em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    
+}
+ button{
+    margin-left: 11pc;
+    margin-top: 3pc;
+    padding: 6px;
+    color: rgb(237,240,239);
+    /* background:linear-gradient(rgb(125, 104, 230),rgb(55, 69, 230)); */
+    background-color: rgb(89, 89, 227);
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    font-size:medium;
+    text-transform: uppercase;
+    border: 2px solid rgb(53, 50, 50);
+    border-radius: 25px; 
+   letter-spacing: 1px;
+     margin-bottom: 40px;
+     height: 50px;
+     width: 120px;
+}
+p{
+    margin-left: 15pc;
+}
+ button:hover{
+    cursor: pointer;
+    /* background: linear-gradient(rgb(180, 54, 54),rgb(225, 16, 16)); */
+    background-color: rgb(212, 46, 46);
+    /* background-color: brown; */
+    box-shadow: 0 2px 2px 0 black;
+    
+}
+    
+
+span{
+    color: blue;
+}
+span:hover{
+    cursor: pointer;
+    color: red;
+}
+.signin {
+    margin-right: 14pc;
+   margin-bottom: 30px ;
+
+
+}
+footer{
+    position: relative;
+    width:100%;
+    background: grey;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+  footer .icon,footer .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  footer .icon li,footer .menu li{
+    list-style-type: none;
+  }
+  footer .icon li a{
+    font-size: 2rem;
+    color: navy;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  footer .icon li a:hover{
+    transform: translateY(-10px);
+  }
+  footer .menu li a{
+    font-size: 1.2rem;
+    color: navy;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+  }
+  footer .menu li a:hover{
+    opacity: 1;
+    color: blanchedalmond;
+  }
+  footer p{
+    color: white;
+    margin: 7px 0;
+    text-align: center;
+    font-size: 1.1 rem;;
+  }
+ .input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #d10c0c;
+}
+
+.input-control .error {
+    color: #be1739;
+    font-size: 19px;
+    font-weight: 400;
+    padding-bottom: 5px;
+    height: 13px;
+    text-align: left;
+    margin-left: 19pc;
+}
