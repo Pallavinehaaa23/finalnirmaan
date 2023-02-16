@@ -12,7 +12,7 @@ form.addEventListener('submit',e=>{
 });
 
 function isFormValid(){
-const inputContainers = form.querySelectorAll('.input-group');
+const inputContainers = form.querySelectorAll('.input-control');
 let result = true;
 inputContainers.forEach((container)=>{
     if(container.classList.contains('error')){
